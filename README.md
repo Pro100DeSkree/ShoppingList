@@ -2,7 +2,7 @@
 
 <p align="left">  
     <a href="https://play.google.com/store/apps/details?id=com.deskree.shoppinglist">
-        <img src="https://user-images.githubusercontent.com/33416429/180564555-b73c1a70-1409-4b9b-a22f-32c7c4a2d3e9.png" width="170" > 
+        <img src="https://github.com/Pro100DeSkree/pro100deskree/blob/main/img/google_play.svg" width="170" > 
     </a>
 </p>
 
@@ -22,4 +22,4 @@
     <img src="https://play-lh.googleusercontent.com/IFd6D35WMaz9EPpXov_PPEdynRc-UA0mXji4nhw0Utyl2UaFQneHUqufN9BMTJC4m94=w2560-h1440" width="130" title="Список для покупок та нотатки" >
 </p>
 
-Це редизайн [старого проекту](https://github.com/Pro100DeSkree/ShoppingListOLD)
+Це редизайн [старого проекту](https://github.com/Pro100DeSkree/ShoppingList/tree/shoppinglist-old)
