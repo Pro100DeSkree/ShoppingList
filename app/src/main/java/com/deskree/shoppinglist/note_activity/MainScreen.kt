@@ -78,31 +78,39 @@ fun MainScreen(
             FloatingActionButton(
                 onClick = {
                     val activity = context as? Activity
-                    if (note.id != null) {
-                        activity?.intent?.putExtra(MainActivity.EDIT_STATE_KEY, "update_note")
-                        activity?.intent?.putExtra(
-                            NoteActivity.NOTE_KEY,
-                            note.copy(
-                                title = textNameState.value.text,
-                                content = textDescriptionState.value.text,
-                                changeDateTime = TimeManager.getCurrentTime()
+                    if (
+                        textNameState.value.text.isNotEmpty() &&
+                        textDescriptionState.value.text.isNotEmpty()
+                    ) {
+                        if (note.id != null) {
+                            activity?.intent?.putExtra(MainActivity.EDIT_STATE_KEY, "update_note")
+                            activity?.intent?.putExtra(
+                                NoteActivity.NOTE_KEY,
+                                note.copy(
+                                    title = textNameState.value.text,
+                                    content = textDescriptionState.value.text,
+                                    changeDateTime = TimeManager.getCurrentTime()
+                                )
                             )
-                        )
+                        } else {
+                            activity?.intent?.putExtra(MainActivity.EDIT_STATE_KEY, "new_note")
+                            activity?.intent?.putExtra(
+                                NoteActivity.NOTE_KEY, NoteItem(
+                                    null,
+                                    textNameState.value.text,
+                                    textDescriptionState.value.text,
+                                    TimeManager.getCurrentTime(),
+                                    null,
+                                    ""
+                                )
+                            )
+                        }
+                        activity?.setResult(RESULT_OK, activity.intent)
+                        activity?.finish()
                     } else {
-                        activity?.intent?.putExtra(MainActivity.EDIT_STATE_KEY, "new_note")
-                        activity?.intent?.putExtra(
-                            NoteActivity.NOTE_KEY, NoteItem(
-                                null,
-                                textNameState.value.text,
-                                textDescriptionState.value.text,
-                                TimeManager.getCurrentTime(),
-                                null,
-                                ""
-                            )
-                        )
+                        isErrorTextNameField.value = textNameState.value.text.isEmpty()
+                        isErrorTextDescriptionField.value = textDescriptionState.value.text.isEmpty()
                     }
-                    activity?.setResult(RESULT_OK, activity.intent)
-                    activity?.finish()
                 },
                 modifier = Modifier
                     .alpha(1f)
