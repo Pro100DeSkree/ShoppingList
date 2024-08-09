@@ -2,7 +2,6 @@ package com.deskree.shoppinglist.note_activity
 
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -40,10 +39,6 @@ class NoteActivity : ComponentActivity() {
             intent.getSerializableExtra(NOTE_KEY) as NoteItem
         }
 
-        if (note == null){
-            note = NoteItem(null, "","","","","")
-        }
-
         val pref = getSharedPreferences(MAIN_PREFERENCE_KEY, MODE_PRIVATE)
 
         setContent {
@@ -58,7 +53,7 @@ class NoteActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    MainScreen(note)
+                    MainScreen(note!!)
                 }
             }
         }

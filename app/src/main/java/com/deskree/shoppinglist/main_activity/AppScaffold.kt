@@ -104,7 +104,20 @@ fun AppScaffold(
                     if (currentFrag.value == NavItems.ListsScreen)
                         isOpenDialog.value = true
                     else if (currentFrag.value == NavItems.NotesScreen)
-                        inentLauncher.launch(Intent(context, NoteActivity::class.java))
+                        inentLauncher.launch(
+                            Intent(context, NoteActivity::class.java)
+                                .putExtra(
+                                    NoteActivity.NOTE_KEY,
+                                    NoteItem(
+                                        null,
+                                        "",
+                                        "",
+                                        "",
+                                        "",
+                                        ""
+                                    )
+                                )
+                        )
                 },
                 modifier = Modifier
                     .alpha(alpha)
