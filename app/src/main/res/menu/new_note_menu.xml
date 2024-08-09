@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bmSave"
+        android:title="@string/titleMenuSave"
+        android:icon="@drawable/ic_done"
+        android:orderInCategory="3"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/bmBold"
+        android:title="@string/titleMenuBold"
+        android:icon="@drawable/ic_format_bold"
+        android:orderInCategory="2"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/bmFormatColor"
+        android:title="@string/titleMenuColorPicker"
+        android:icon="@drawable/ic_format_color"
+        android:orderInCategory="1"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/share_note"
+        android:title="@string/titleMenuShareNote"
+        android:icon="@drawable/ic_share"
+        android:orderInCategory="4"
+        app:showAsAction="ifRoom"/>
+</menu>

@@ -1,19 +1,106 @@
 <resources>
-    <string name="app_name">Список покупок та нотатки</string>
-    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="app_name">Список покупок</string>
+    <!--Bottom Navigation Menu-->
+    <string name="settings">Налаштування</string>
+    <string name="notes">Нотатки</string>
+    <string name="shopList">Списки</string>
+    <string name="newItem">Додати</string>
 
-    <!-- Preference Titles -->
-    <string name="messages_header">Messages</string>
-    <string name="sync_header">Sync</string>
+    <string name="clearList">Очистити список</string>
+    <string name="shareList">Надіслати</string>
+    <string name="saveItemList">Додати</string>
+    <string name="newItemName">Що потрібно?</string>
 
-    <!-- Messages Preferences -->
-    <string name="signature_title">Your signature</string>
-    <string name="reply_title">Default reply action</string>
+    <string name="titleHint">Назва</string>
+    <string name="descriptionHint">Опис</string>
 
-    <!-- Sync Preferences -->
-    <string name="sync_title">Sync email periodically</string>
-    <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails
-    </string>
-    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="titleMenuSave">Зберегти</string>
+    <string name="titleMenuBold">Жирний</string>
+    <string name="titleMenuColorPicker">Палітра</string>
+    <string name="titleMenuShareNote">Надіслати</string>
+
+    <!--    CONTENT DESCRIPTION-->
+    <string name="ibDeleteNoteContentDesc">Видалити нотатку</string>
+    <string name="ibDeleteListContentDesc">Видалити список</string>
+    <string name="ibDeleteListItemContentDesc">Видалити елемент списку</string>
+    <string name="ibDeleteItemContentDesc">Видалити елемент підсказок</string>
+    <string name="ibEditListContentDesc">Редагувати список</string>
+    <string name="ibEditItemContentDesc">Редагувати елемент списку</string>
+
+    <!--    COLOR PICKER-->
+    <string name="picker_gray">Палітра - сірий</string>
+    <string name="picker_blue">Палітра - блакитний</string>
+    <string name="picker_yellow">Палітра - жовтий</string>
+    <string name="picker_red">Палітра - червоний</string>
+    <string name="picker_black">Палітра - чорний</string>
+    <string name="picker_purple">Палітра - фіолетовий</string>
+
+    <!--        ДІАЛОГИ-->
+    <!--    ДІАЛОГ СТВОРЕННЯ НОВОГО СПИСКУ-->
+    <string name="newList">Створити список</string>
+    <string name="newListName">Редагувати список</string>
+    <string name="btnCreate">Створити</string>
+    <string name="edtListName">Назва</string>
+    <string name="titleListName">Назва списку:</string>
+    <!--    ДІАЛОГ ВИДАЛЕННЯ-->
+    <string name="titleDelete">Видалення</string>
+    <string name="DeleteMessage">Дійсно хочете видалити цей список?</string>
+    <!--    ДІАЛОГ ВИХОДУ З РЕДАГУВАННЯ/СТВОРЕННЯ НОТАТКИ-->
+    <string name="titleExit">Вийти без збереження?</string>
+    <string name="ExitMessage">Дійсно хочете вийти без збереження змін?\n Всі зміни будуть втрачені!</string>
+    <!--    ДІАЛОГ ОЧИЩЕННЯ СПИСКУ-->
+    <string name="title_clear">Очищення списку</string>
+    <string name="clear_message">Дійсно хочете очистити всі елементи цього спику?</string>
+    <!--    ДІАЛОГ РЕДАГУВАННЯ ЕЛЕМЕНТУ-->
+    <string name="titleEdit">Редагувати</string>
+    <string name="edtHintNameItem">Назва</string>
+    <string name="tvNameItem">Назва:</string>
+    <string name="edtHintDescItem">Опис</string>
+    <string name="tvDescItem">Опис:</string>
+    <!--    ЗАГАЛЬНІ-->
+    <string name="btnOK">OK</string>
+    <string name="btnCancel">Скасувати</string>
+    <string name="btnSave">Зберегти</string>
+    <string name="edtError">Заповніть це поле!</string>
+    <string name="btnEdit">Зберегти</string>
+
+    <!--    ТЕКСТОВІ ЗАГЛУШКИ-->
+    <string name="titleStub">Title Stub</string>
+    <string name="descStub">Description Stub</string>
+    <string name="change_data_time_stub">Змінено: hh:mm:ss - dd.MM.yy</string>
+    <string name="data_time_stub">10:00:00 – 01.01.23</string>
+    <string name="CounterStub">0/0</string>
+
+
+    <string name="labelEmpty">Порожньо</string>
+    <string name="shareBy">Надістали в</string>
+
+    <!--    PREFERENCE SCREEN    -->
+    <string name="general">Головне</string>
+
+    <!--    DEF START FRAGMENT    -->
+    <string name="chose_default_fragment">Екран запуска</string>
+    <string name="default_start_frag_key">default_start_frag_key</string>
+    <!--    STYLE LINEAR/GRID    -->
+    <string name="chose_note_style">Стиль нотаток</string>
+    <string name="note_style_key">note_style_key</string>
+    <!--    TIME FORMAT     -->
+    <string name="chose_time_format">Формат часу</string>
+    <string name="time_format_key">time_format_key</string>
+
+    <string name="other">Інше</string>
+
+    <!--    REMOVE ADS   -->
+    <string name="remove_ads">Видалити рекламу</string>
+    <string name="remove_ads_summary">Видалити всю рекламу в застосунку</string>
+    
+    <!--  ДЛЯ РОЗРОБКИ  -->
+    <string name="inter_ad_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="banner_ad_id_main_activity">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_id_shop_list_activity">ca-app-pub-3940256099942544/6300978111</string>
+    <!--  ДЛЯ PLAY MARKET  -->
+<!--    <string name="inter_ad_id">ca-app-pub-2583041940023986/6135192537</string>-->
+<!--    <string name="banner_ad_id_main_activity">ca-app-pub-2583041940023986/8751663309</string>-->
+<!--    <string name="banner_ad_id_shop_list_activity">ca-app-pub-2583041940023986/3977950404</string>-->
+
 </resources>

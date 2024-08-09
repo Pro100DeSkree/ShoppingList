@@ -7,4 +7,24 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grayBG">#CCCCCC</color>
+    <color name="grayDialogBG">#666666</color>
+    <color name="redButtonBG">#E32A2A</color>
+    <color name="green">#339A22</color>
+    <color name="blueButtonBG">#554BEA</color>
+    <color name="orange">#FFC800</color>
+    <color name="greenLight">#51E838</color>
+
+
+    <color name="picker_gray">#919191</color>
+    <color name="picker_blue">#0056FD</color>
+    <color name="picker_yellow">#FFC100</color>
+    <color name="picker_red">#EF1F1F</color>
+    <color name="picker_black">#000000</color>
+    <color name="picker_purple">#712DDD</color>
+
+    <color name="grayLibraryItems">#5C5F61</color>
+    <color name="grayLibraryItemBG">#C5C7C9</color>
+
+
 </resources>

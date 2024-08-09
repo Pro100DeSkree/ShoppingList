@@ -1,12 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Reply Preference -->
-    <string-array name="reply_entries">
-        <item>Reply</item>
-        <item>Reply to all</item>
+    <string-array name="start_frag_array">
+        <item>Списоки</item>
+        <item>Нотатки</item>
+    </string-array>
+    <string-array name="start_frag_values">
+        <item>Lists</item>
+        <item>Notes</item>
     </string-array>
 
-    <string-array name="reply_values">
-        <item>reply</item>
-        <item>reply_all</item>
+    <string-array name="note_style_array">
+        <item>Лінійний</item>
+        <item>Сіткой</item>
+    </string-array>
+    <string-array name="note_style_values">
+        <item>Linear</item>
+        <item>Grid</item>
+    </string-array>
+
+    <string-array name="time_format_array">
+        <item>23:59:59 – 31.12.23</item>
+        <item>23:59:59 – 23.12.31</item>
+        <item>23:59:59</item>
+        <item>23.12.31</item>
+    </string-array>
+    <string-array name="time_format_values">
+        <item>HH:mm:ss - dd.MM.yy</item>
+        <item>HH:mm:ss - yy.MM.dd</item>
+        <item>HH:mm:ss</item>
+        <item>yy.MM.dd</item>
     </string-array>
 </resources>

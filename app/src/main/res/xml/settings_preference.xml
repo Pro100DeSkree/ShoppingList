@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/general">
+
+        <ListPreference
+            android:defaultValue="Lists"
+            android:entries="@array/start_frag_array"
+            android:entryValues="@array/start_frag_values"
+            android:key="@string/default_start_frag_key"
+            android:title="@string/chose_default_fragment"
+            app:useSimpleSummaryProvider="true"
+            android:icon="@drawable/ic_settings_start_frag" />
+        <ListPreference
+            android:defaultValue="Linear"
+            android:entries="@array/note_style_array"
+            android:entryValues="@array/note_style_values"
+            android:key="@string/note_style_key"
+            android:title="@string/chose_note_style"
+            app:useSimpleSummaryProvider="true"
+            android:icon="@drawable/ic_note_style" />
+        <ListPreference
+            android:defaultValue="HH:mm:ss - dd.MM.yy"
+            android:entries="@array/time_format_array"
+            android:entryValues="@array/time_format_values"
+            android:key="@string/time_format_key"
+            app:useSimpleSummaryProvider="true"
+            android:title="@string/chose_time_format"
+            android:icon="@drawable/ic_time_format"/>
+    </PreferenceCategory>
+
+<!--    <PreferenceCategory android:title="@string/other">-->
+
+<!--    <Preference-->
+<!--            android:key="remove_ads_key"-->
+<!--            android:title="@string/remove_ads"-->
+<!--            android:summary="@string/remove_ads_summary"-->
+<!--            android:icon="@drawable/ic_remove_ads"/>-->
+<!--    </PreferenceCategory>-->
+
+</PreferenceScreen>
