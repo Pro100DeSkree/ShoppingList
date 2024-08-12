@@ -99,31 +99,33 @@ fun AppScaffold(
         topBar = { TopAppBarCast(currentFrag) },
         floatingActionButton = {
 
-            FloatingActionButton(
-                onClick = {
-                    if (currentFrag.value == NavItems.ListsScreen)
-                        isOpenDialog.value = true
-                    else if (currentFrag.value == NavItems.NotesScreen)
-                        inentLauncher.launch(
-                            Intent(context, NoteActivity::class.java)
-                                .putExtra(
-                                    NoteActivity.NOTE_KEY,
-                                    NoteItem(
-                                        null,
-                                        "",
-                                        "",
-                                        "",
-                                        "",
-                                        ""
+            if (alpha != 0f) {
+                FloatingActionButton(
+                    onClick = {
+                        if (currentFrag.value == NavItems.ListsScreen)
+                            isOpenDialog.value = true
+                        else if (currentFrag.value == NavItems.NotesScreen)
+                            inentLauncher.launch(
+                                Intent(context, NoteActivity::class.java)
+                                    .putExtra(
+                                        NoteActivity.NOTE_KEY,
+                                        NoteItem(
+                                            null,
+                                            "",
+                                            "",
+                                            "",
+                                            "",
+                                            ""
+                                        )
                                     )
-                                )
-                        )
-                },
-                modifier = Modifier
-                    .alpha(alpha)
-                    .zIndex(1f)
-            ) {
-                Icon(imageVector = Icons.Default.Add, contentDescription = "Add")
+                            )
+                    },
+                    modifier = Modifier
+                        .alpha(alpha)
+                        .zIndex(1f)
+                ) {
+                    Icon(imageVector = Icons.Default.Add, contentDescription = "Add")
+                }
             }
         },
         floatingActionButtonPosition = FabPosition.End,
